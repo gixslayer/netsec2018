@@ -1,0 +1,2 @@
+The data_length value is the size in octets, including the header and data.
+The header is 8 bytes, which explains why data_length is 8 bytes larger than the size of data.
