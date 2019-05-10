@@ -1,0 +1,99 @@
+[active clients]
+Most active clients (based on total # packets sent)
+
+00:0f:c9:0c:ee:ed <-> 00:0f:c9:0c:f7:8c (packets=305619, bytes=198258738)
+00:0f:c9:0c:f7:8c <-> c4:e9:84:d7:70:67 (packets=284071  bytes=179910558)
+00:0f:c9:0c:f7:8c <-> 00:0f:c9:0c:f7:93 (packets=87744   bytes=877440)
+00:0f:c9:0c:f7:93 <-> c4:e9:84:d7:70:67 (packets=56085   bytes=560850)
+00:0f:c9:0c:ee:ed <-> 00:0f:c9:0c:f7:93 (packets=37989   bytes=379890)
+
+
+
+[protocol hierarchy]
+We only see the 802.11 protocol in the Protocol Hierarchy because the traffic is still encrypted, thus we don't see anything like IP/UDP/TCP that is inside the encrypted 802.11 frames
+
+
+
+[comments summary]
+Created by Wireshark 2.6.6 (Git v2.6.6 packaged as 2.6.6-1~ubuntu18.04.0)
+
+File
+
+Name:
+/home/ciske/Studie/Semester 4/netsec/assignment2/exercise3/outputnetsec-01.cap
+Length:
+396 MB
+Format:
+Wireshark/tcpdump/... - pcap
+Encapsulation:
+IEEE 802.11 Wireless LAN
+Snapshot length:
+65535
+
+Time
+
+First packet:
+2019-04-26 13:39:33
+Last packet:
+2019-04-26 13:46:08
+Elapsed:
+00:06:34
+
+Capture
+
+Hardware:
+Unknown
+OS:
+Unknown
+Application:
+Unknown
+
+Interfaces
+
+Interface
+Dropped packets
+Capture filter
+Link type
+Packet size limit
+Unknown
+Unknown
+Unknown
+IEEE 802.11 Wireless LAN
+65535 bytes
+
+Statistics
+
+Measurement
+Captured
+Displayed
+Marked
+Packets
+904330
+904330 (100.0%)
+—
+Time span, s
+394.937
+394.937
+—
+Average pps
+2289.8
+2289.8
+—
+Average packet size, B
+423
+423
+—
+Bytes
+382089914
+382089914 (100.0%)
+0
+Average bytes/s
+967 k
+967 k
+—
+Average bits/s
+7739 k
+7739 k
+—
+
+

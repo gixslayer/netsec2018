@@ -1,0 +1,3 @@
+Assuming the security of WPA2-PSK boils down to keeping the WPA2-PSK hidden, this obviously fails to protect against other connected clients (as they presumibly have access to the pre-shared secret). With access to this pre-shared secret a client should be able to recover the key used by each client, as all other data the key is derived from is public/sent in cleartext (and no asymmetric crypto/key establishment is used).
+
+In case a handshake is missed and thus data to derive the session key is missing, one can spoof de-auth packets to force another handshake (thus obtaining the needed data to derive the session key).

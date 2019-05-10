@@ -1,0 +1,39 @@
+$ sudo airmon-ng start wlo1
+$ sudo airodump-ng wlo1mon
+
+
+ CH  5 ][ Elapsed: 0 s ][ 2019-04-26 13:34                                         
+                                                                                                                                                                                                                                             
+ BSSID              PWR  Beacons    #Data, #/s  CH  MB   ENC  CIPHER AUTH ESSID
+                                                                                                                                                                                                                                             
+ A8:9D:21:DA:E9:C0  -83        1        1    0   1  54e  WPA2 CCMP   MGT  eduroam                                                                                                                                                            
+ F4:DB:E6:DA:4F:00  -43        2       15    7   1  54e  WPA2 CCMP   MGT  eduroam                                                                                                                                                            
+ A8:9D:21:B2:DF:D3  -71        0        0    0   1  54e  OPN              eduroam-config                                                                                                                                                     
+ A8:9D:21:B2:DF:D0  -72        2       43   21   1  54e  WPA2 CCMP   MGT  eduroam                                                                                                                                                            
+ 00:0F:C9:0C:F7:93  -55        3      228  113   1  54e  WEP  WEP         netsec-wep                                                                                                                                                         
+                                                                                                                                                                                                                                             
+ BSSID              STATION            PWR   Rate    Lost    Frames  Probe                                                                                                                                                                   
+                                                                                                                                                                                                                                              
+ (not associated)   0C:CB:85:AF:F9:69  -67    0 - 1      0        1                                                                                                                                                                           
+ (not associated)   DA:A1:19:74:87:51  -76    0 - 1     29        6                                                                                                                                                                           
+ A8:9D:21:DA:E9:C0  60:F8:1D:CE:62:00   -1   12e- 0      0        1                                                                                                                                                                           
+ F4:DB:E6:DA:4F:00  E4:B3:18:AC:2F:38  -43    0 - 0e     3       16                                                                                                                                                                           
+ A8:9D:21:B2:DF:D0  34:F6:4B:8C:6B:F8  -57    0 -18e     0        1                                                                                                                                                                           
+ A8:9D:21:B2:DF:D0  3C:95:09:6A:AE:B3   -1    0e- 0      0       35                                                                                                                                                                           
+ A8:9D:21:B2:DF:D0  00:0A:F5:27:C3:94  -79    0e- 0e     0        7                                                                                                                                                                           
+ 00:0F:C9:0C:F7:93  C4:E9:84:D7:70:67  -42   54e-54e     9       63                                                                                                                                                                           
+ 00:0F:C9:0C:F7:93  00:0F:C9:0C:F7:8C  -52   54e-24e    27      124                                                                                                                                                                           
+ 00:0F:C9:0C:F7:93  00:0F:C9:0C:EE:ED  -70   48e-54e    29       53 
+
+
+[Target network]
+BSSID: 00:0F:C9:0C:F7:93
+ESSID: netsec-wep
+channel: 1
+
+[Clients connected]
+C4:E9:84:D7:70:67
+00:0F:C9:0C:F7:8C
+00:0F:C9:0C:EE:ED
+
+MAC is very similar, same NIC model/vendor?
