@@ -1,0 +1,1 @@
+As long as you have a way of transmitting data, such as HTTP(S), you could tunnel any other protocol (such as SSH) through that transmission channel. This can either be done quite obviously, or be hidden (eg extra data through HTTP headers, while the rest of the HTTP request is completely legit for instance).

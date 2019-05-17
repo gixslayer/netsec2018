@@ -1,0 +1,14 @@
+a)
+IP address spoofing is the modification/construction of an IP packet such that the source IP address is not that of the sending host, but some other host. The goal is to try and trick the receiver by making it look like the IP packet came from a different (spoofed) host.
+
+b)
+Because the UDP/TCP headers (as well as IP) also contain a checksum field, which includes the IP addresses modified during spoofing. As a result the checksum is no longer valid, and thus the packet will be dropped.
+
+c)
+When Mallory sends a spoofed SYN to Alice, Alice will respond to Bob with a SYN/ACK. Since Bob did not initiate the connection he will respond with a RST to Alice, at which point Alice terminates the connection (thus making the SYN flood ineffective as the resources are freed).
+
+d)
+When Mallory sends a spoofed SYN to Alice, Alice will respond to Ursula with a SYN/ACK. Since Ursula is currently not on the network, this will fail and Alice will receive an ICMP/Destination Unreachable Message, at which point she knows she can terminate the connection (and thus free resources, making the attack ineffective).
+
+e)
+Mallory could launch a SYN flood against Alice, where Mallory IP spoofs the address to come from Bob, while Mallory also ARP spoofs the address of Bob. She can then simply forward all traffic intended for Bob to Bob, except ignoring the SYN/ACK from Alice, which then makes the SYN flood successful as there is no RST/ICMP Destination Unreachable being generated.

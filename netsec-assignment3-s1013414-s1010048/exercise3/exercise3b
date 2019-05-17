@@ -1,0 +1,4 @@
+$ sudo nmap -O 192.168.84.41
+
+Using the -O option to enable OS detection
+(again tested on my own network, as we had no access to the test network)

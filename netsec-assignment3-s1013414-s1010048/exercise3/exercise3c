@@ -1,0 +1,10 @@
+$ sudo nmap -sS 192.168.84.41
+
+Using the TCP SYN scan
+
+Or alternatively
+
+$ sudo nmap -sT -sU -p0-65535 192.168.84.41
+
+to scan the entire port range using both TCP and UDP
+

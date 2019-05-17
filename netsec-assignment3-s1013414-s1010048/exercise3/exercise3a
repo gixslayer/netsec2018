@@ -1,0 +1,4 @@
+$ nmap -sn 192.168.84.0/24
+
+Just doing a simple ping scan on the entire subnet to discover active hosts.
+(we couldn't be at the uni for various reasons, so I mapped my own network instead)
