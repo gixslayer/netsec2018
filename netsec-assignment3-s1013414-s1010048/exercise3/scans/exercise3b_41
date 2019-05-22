@@ -1,0 +1,25 @@
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2019-05-22 16:36 CEST
+Nmap scan report for 192.168.84.41
+Host is up (0.017s latency).
+Not shown: 990 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+79/tcp   open  finger
+80/tcp   open  http
+111/tcp  open  rpcbind
+143/tcp  open  imap
+512/tcp  open  exec
+513/tcp  open  login
+514/tcp  open  shell
+993/tcp  open  imaps
+2525/tcp open  ms-v-worlds
+MAC Address: 00:0F:C9:0C:EE:ED (Allnet GmbH)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.8
+Network Distance: 1 hop
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 10.96 seconds

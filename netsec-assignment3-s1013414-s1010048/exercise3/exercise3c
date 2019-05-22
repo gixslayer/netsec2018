@@ -1,6 +1,10 @@
-$ sudo nmap -sS 192.168.84.41
+$ sudo nmap -sS 192.168.84.X
 
-Using the TCP SYN scan
+where X in {1, 2, 41, 42, 61, 62}
+
+See ./scans/exercise3c_X for output
+
+Using the TCP SYN scan, which scans by making half open connections (send SYN, wait for SYN/ACK, but never send ACK to establish connection).
 
 Or alternatively
 

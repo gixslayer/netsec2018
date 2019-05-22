@@ -1,4 +1,8 @@
-$ nmap -sn 192.168.84.0/24
+$ sudo nmap -n -sn 192.168.84.1-255
+
+Hosts on 192.168.84.1-192.168.84.20 and 192.168.84.40-80
+
+See ./scans/exercise3a_hosts for output
 
 Just doing a simple ping scan on the entire subnet to discover active hosts.
-(we couldn't be at the uni for various reasons, so I mapped my own network instead)
+Note that exercise3 was done on netsec-wpa entirely, as opposed to netsec-wep (network was no longer up as far as I could tell).

@@ -1,4 +1,7 @@
-$ sudo nmap -O 192.168.84.41
+$ sudo nmap -O 192.168.84.X
+
+where X in {1, 2, 41, 42, 61, 62}
+
+See ./scans/exercise3b_X for output
 
 Using the -O option to enable OS detection
-(again tested on my own network, as we had no access to the test network)

@@ -1,3 +1,7 @@
-$ sudo nmap -sS -sV 192.168.84.41
+$ sudo nmap -sS -sV 192.168.84.X
 
-Again no access to the network, but performed on my own network.
+where X in {1, 2, 41, 42, 61, 62}
+
+See ./scans/exercise3d_X for output
+
+The only unexpected services was Postfix smtpd running on port 2525 on hosts 192.168.84.41 and 192.168.84.42 (again done on netsec-wpa so setup might be different than netsec-wep).
