@@ -1,0 +1,4 @@
+It looks up the active mapping by using the embedded packet, then translates it and forwards it to the correct host. Translating means reverting the embedded packet to the original state (as it was modified when it left the NAT), and modifying the top level ip packet so that it is forwarded to the correct host.
+
+This way the host receives the packet in the expected form. The NAT can establish the active mapping from the embedded packet, as this is the packet that caused the ICMP Error to be generated, and contains the needed information.
+

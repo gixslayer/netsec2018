@@ -1,0 +1,1 @@
+Because there is no translation, so it is unknown to which host the ICMP Error should be forwarded. Furthermore, it cannot restore the embedded packet to the 'correct' state as it has no mapping to correct from.

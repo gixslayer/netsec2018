@@ -1,0 +1,3 @@
+A lot of hosts might send a tiny bit of traffic against the router, making Source Quench messages rather ineffective (if they are even triggered to begin with).
+
+Besides that, a malicious host/netstack might just decide to ignore the quench messages, making them pointless (and sending them likely just consumes more resources of the router).

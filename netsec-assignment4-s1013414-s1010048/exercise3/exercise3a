@@ -1,0 +1,1 @@
+Since 0.0.0.0/1 and 128.0.0.0/1 are more specific than 0.0.0.0/0 (default), but cover all ip addresses (all starting with bit 0, and all starting with bit 1), all traffic not matched by any other rules will fall under rules 1-2, and thus be routed via gateway 10.50.9.1 over tap0.

@@ -1,0 +1,1 @@
+If the SSH server is also running on the ip 198.51.100.42, then it will be sent directly via the gateway 145.116.128.1 on interface wlp3s0, due to rule 10. It is not tunneled through the VPN.

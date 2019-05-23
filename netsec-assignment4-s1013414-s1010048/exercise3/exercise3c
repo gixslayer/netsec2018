@@ -1,0 +1,3 @@
+Rule 3 allows the 10.50.9.0/24 subnet to be reached directly over the tap0 interface (which has ip 10.50.9.60). This again provides a way to communicate with a local/private network directly, rather than routing it through the vpn.
+
+Rule 3 is also more specific than rule 4. Without rule 3, rule 4 would be applied and the traffic would be sent over the wlp3s0 gateway, which would not be correct.

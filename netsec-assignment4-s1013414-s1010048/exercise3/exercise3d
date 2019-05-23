@@ -1,0 +1,1 @@
+Rule 8 specifies that 131.174.117.20 (which is the DHCP/DNS server for interface wlp3s0) should be routed via the 145.116.128.1 gateway (interface wlp3s0). This means that DHCP/DNS for this interface is not routed through the vpn.

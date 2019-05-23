@@ -1,0 +1,1 @@
+Send a lot of traffic to various hosts with a spoofed source IP of the target host. The honest hosts receiving the spoofed traffic will then reply with a Source Quench message to the target host. If scaled large enough, the target host will be hit by a denial of service due to the large amount of Source Quench messages being received.

@@ -1,0 +1,5 @@
+One concern is that the NAT is bombarded with bogus ICMP Error traffic, which would then be forwarded to the host behind the NAT (performing a denial of service). This attack is mitigated by dropping malformed ICMP packets, as well as dropping ICMP packets that don't have an active mapping. This way an ICMP Error is only sent to a host if it comes in response to prior (legit) traffic, sent by that host.
+
+Sending an ICMP Error when a session cannot be created due to a lack of resources provides potential attackers with information that the NAT is being attacked successfully, therefore it is a security concern that can be mitigated by not sending these ICMP Error packets.
+
+A rogue source host could try to destroy the other sessions by sending bogus ICMP Error packets. As a mitigation ICMP Error messages should not affect the state of a session on the NAT device.

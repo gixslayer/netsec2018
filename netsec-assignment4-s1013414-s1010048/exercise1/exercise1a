@@ -1,0 +1,8 @@
+iptables -P INPUT DROP
+iptables -A INPUT -p icmp --icmp-type redirect -j DROP
+iptables -A INPUT -p icmp --icmp-type ! redirect -j ACCEPT
+iptables -A INPUT -m state --state established -j ACCEPT
+iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+
+iptables -P OUTPUT ACCEPT
+iptables -A OUPUT -p icmp --icmp-type redirect -j DROP

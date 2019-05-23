@@ -1,0 +1,1 @@
+Rule 10 states that traffic to the vpn (198.51.100.42) should be routed via gateway 145.116.128.1 on interface wlp3s0. Without this rule, there would be no way to actually send the tunneled traffic to the vpn.
