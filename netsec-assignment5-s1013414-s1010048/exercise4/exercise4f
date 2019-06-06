@@ -1,0 +1,5 @@
+We MITM to intercept the HTTP GET request, then make this request ourselves (which gives us the readable/decryptable response), and then forward this response back to the original requesting host.
+
+This way we can read the traffic, as we run HTTP between the client and us, and HTTP/HTTPS between us and the server, all while the client thinks he is directly connected to the server (but using HTTP rather than HTTPS).
+
+It does rewrite traffic, rather than only forwarding, as we want to set up the HTTP(S) connection between us and the server directly.

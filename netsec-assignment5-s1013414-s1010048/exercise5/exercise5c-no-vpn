@@ -1,0 +1,92 @@
+ciske@ciske-laptop ~/Studie $ ip route show
+default via 192.168.2.254 dev wlo1 proto dhcp metric 600 
+169.254.0.0/16 dev wlo1 scope link metric 1000 
+192.168.2.0/24 dev wlo1 proto kernel scope link src 192.168.2.58 metric 600 
+
+
+traceroute to brightspace.ru.nl (52.51.200.171), 30 hops max, 60 byte packets
+ 1  mijnmodem.kpn.home (192.168.2.254)  3.053 ms  3.060 ms  3.036 ms
+ 2  static.kpn.net (195.190.228.73)  11.874 ms  11.872 ms  11.850 ms
+ 3  139.156.98.101 (139.156.98.101)  14.755 ms  14.756 ms  14.737 ms
+ 4  amazon.equinix-am3.nl-ix.net (193.239.117.227)  14.719 ms amazon.telecity2.nl-ix.net (193.239.116.110)  33.631 ms amazon.equinix-am3.nl-ix.net (193.239.117.227)  14.673 ms
+ 5  * * *
+ 6  * * *
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  * * *
+11  * * *
+12  * * *
+13  * * *
+14  * * *
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+22  * * *
+23  * * *
+24  * * *
+25  * * *
+26  * * *
+27  * * *
+28  * * *
+29  * * *
+30  * * *
+
+
+traceroute to google.com (172.217.17.142), 30 hops max, 60 byte packets
+ 1  mijnmodem.kpn.home (192.168.2.254)  3.018 ms  3.006 ms  2.992 ms
+ 2  static.kpn.net (195.190.228.73)  10.688 ms  10.690 ms  10.687 ms
+ 3  * * *
+ 4  209.85.149.36 (209.85.149.36)  14.148 ms 209.85.149.38 (209.85.149.38)  14.094 ms 139.156.127.11 (139.156.127.11)  14.093 ms
+ 5  * 108.170.241.161 (108.170.241.161)  16.709 ms *
+ 6  ams15s30-in-f14.1e100.net (172.217.17.142)  16.621 ms  12.846 ms 108.170.236.227 (108.170.236.227)  12.870 ms
+
+
+traceroute to cs.ru.nl (131.174.9.227), 30 hops max, 60 byte packets
+ 1  mijnmodem.kpn.home (192.168.2.254)  3.027 ms  2.993 ms  2.965 ms
+ 2  static.kpn.net (195.190.228.73)  9.460 ms  9.468 ms  11.878 ms
+ 3  * * *
+ 4  surfnet.telecity2.nl-ix.net (193.239.117.149)  15.089 ms  15.103 ms  15.095 ms
+ 5  Lo0-2.asd001b-jnx-01-SN7-internet.surf.net (145.145.128.4)  15.060 ms ru-router.customer.surf.net (145.145.8.82)  18.291 ms  18.301 ms
+ 6  ru-router.customer.surf.net (145.145.8.82)  18.285 ms  16.601 ms *
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  * * *
+11  * * *
+12  * * *
+13  * * *
+14  * * *
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+22  * * *
+23  * * *
+24  * * *
+25  * * *
+26  * * *
+27  * * *
+28  * * *
+29  * * *
+30  * * *
+
+
+traceroute to openvpn.science.ru.nl (131.174.16.141), 30 hops max, 60 byte packets
+ 1  mijnmodem.kpn.home (192.168.2.254)  4.765 ms  4.752 ms  4.717 ms
+ 2  73.228.190.195.in-addr.arpa (195.190.228.73)  15.338 ms  15.344 ms  15.350 ms
+ 3  * * *
+ 4  149.117.239.193.in-addr.arpa (193.239.117.149)  18.928 ms  18.920 ms  18.914 ms
+ 5  4.128.145.145.in-addr.arpa (145.145.128.4)  18.866 ms  18.845 ms  18.812 ms
+ 6  82.8.145.145.in-addr.arpa (145.145.8.82)  22.458 ms  17.979 ms  17.875 ms
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  openvpn.science.ru.nl (131.174.16.141)  17.784 ms !X  38.776 ms !X  31.375 ms !X

@@ -1,0 +1,1 @@
+DNS amplification would spoof the source ip to that of the (D)DoS target. If the firewall rejects all outgoing traffic from LAN that doesn't have a valid source ip (meaning it is in 203.0.113.0/24), it prevents this DNS amplification attack.

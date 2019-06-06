@@ -1,0 +1,73 @@
+ciske@ciske-laptop ~ $ ip route show
+0.0.0.0/1 via 131.174.224.129 dev tun0 
+default via 192.168.2.254 dev wlo1 proto dhcp metric 600 
+128.0.0.0/1 via 131.174.224.129 dev tun0 
+131.174.16.141 via 192.168.2.254 dev wlo1 
+131.174.224.128/27 dev tun0 proto kernel scope link src 131.174.224.143 
+169.254.0.0/16 dev wlo1 scope link metric 1000 
+192.168.2.0/24 dev wlo1 proto kernel scope link src 192.168.2.58 metric 600
+
+
+traceroute to brightspace.ru.nl (52.51.200.171), 30 hops max, 60 byte packets
+ 1  openvpn-gw.science.ru.nl (131.174.224.129)  17.618 ms * *
+ 2  dr-huyg.net.science.ru.nl (131.174.16.129)  63.891 ms  63.889 ms  63.886 ms
+ 3  * * *
+ 4  192.168.23.25 (192.168.23.25)  63.707 ms  63.718 ms  63.717 ms
+ 5  192.168.23.17 (192.168.23.17)  63.769 ms  63.784 ms  63.748 ms
+ 6  1117.e6-2.nm001a-jnx-01.surf.net (145.145.8.81)  71.510 ms  33.386 ms  32.178 ms
+ 7  amsix01-ams1.amazon.com (80.249.210.100)  32.145 ms  49.390 ms  31.879 ms
+ 8  * * *
+ 9  * * *
+10  * * *
+11  * * *
+12  * * *
+13  * * *
+14  * * *
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+22  * * *
+23  * * *
+24  * * *
+25  * * *
+26  * * *
+27  * * *
+28  * * *
+29  * * *
+30  * * *
+
+
+traceroute to google.com (172.217.17.142), 30 hops max, 60 byte packets
+ 1  openvpn-gw.science.ru.nl (131.174.224.129)  17.835 ms  35.398 ms  35.414 ms
+ 2  dr-huyg.net.science.ru.nl (131.174.16.129)  35.457 ms  35.447 ms  35.438 ms
+ 3  * * *
+ 4  192.168.23.25 (192.168.23.25)  35.245 ms  35.243 ms  35.235 ms
+ 5  192.168.23.17 (192.168.23.17)  52.293 ms  52.318 ms  52.306 ms
+ 6  1117.e6-2.nm001a-jnx-01.surf.net (145.145.8.81)  52.302 ms  51.267 ms  51.187 ms
+ 7  google-router1.peering.surf.net (145.145.166.82)  51.241 ms  51.156 ms  51.291 ms
+ 8  108.170.241.129 (108.170.241.129)  51.141 ms 108.170.241.161 (108.170.241.161)  51.207 ms 108.170.241.129 (108.170.241.129)  51.067 ms
+ 9  108.170.236.227 (108.170.236.227)  51.094 ms  52.327 ms 108.170.236.225 (108.170.236.225)  52.293 ms
+10  142.17.217.172.in-addr.arpa (172.217.17.142)  52.179 ms  52.202 ms  52.645 ms
+
+
+traceroute to cs.ru.nl (131.174.9.227), 30 hops max, 60 byte packets
+ 1  openvpn-gw.science.ru.nl (131.174.224.129)  17.468 ms  17.493 ms  17.488 ms
+ 2  dr-huyg.net.science.ru.nl (131.174.16.129)  17.479 ms  17.470 ms  34.739 ms
+ 3  www.cs.ru.nl (131.174.9.227)  17.425 ms !X  17.414 ms !X  17.400 ms !X
+
+
+traceroute to openvpn.science.ru.nl (131.174.16.141), 30 hops max, 60 byte packets
+ 1  mijnmodem.kpn.home (192.168.2.254)  2.961 ms  2.915 ms  2.854 ms
+ 2  73.228.190.195.in-addr.arpa (195.190.228.73)  8.811 ms  8.799 ms  11.844 ms
+ 3  * * *
+ 4  149.117.239.193.in-addr.arpa (193.239.117.149)  16.509 ms  16.551 ms  16.469 ms
+ 5  4.128.145.145.in-addr.arpa (145.145.128.4)  16.413 ms  16.400 ms  16.403 ms
+ 6  82.8.145.145.in-addr.arpa (145.145.8.82)  20.502 ms  16.828 ms  16.698 ms
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  141.16.174.131.in-addr.arpa (131.174.16.141)  28.893 ms !X  24.918 ms !X  19.700 ms !X

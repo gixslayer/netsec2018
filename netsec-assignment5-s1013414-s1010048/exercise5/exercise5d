@@ -1,0 +1,5 @@
+We see a different route to brightspace and google, as expected, but nothing really interesting. This is because both sites are also quite some hops away from the vpn server.
+
+The cs.ru.nl route is much faster from the vpn, as it is already fairly close.
+
+The route to the VPN server itself is the same, as the traceroute is not ran through the VPN (due to the '131.174.16.141 via 192.168.2.254 dev wlo1' rule).

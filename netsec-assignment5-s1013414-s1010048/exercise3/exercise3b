@@ -1,0 +1,1 @@
+both Arya and Bran start sending UDP traffic. While initial traffic might be blocked (as it is marked as an incoming connection), further traffic is allowed as the firewall now has a record of Arya sending to Bran and vice versa, thus making it seem the connection is outgoing for both of them?

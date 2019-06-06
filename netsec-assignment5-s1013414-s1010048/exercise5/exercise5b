@@ -1,0 +1,12 @@
+client                                              // helper directive to simplify configuration of client mode
+proto tcp                                           // use TCP for commuinication with remote host
+dev tun                                             // use dynamic tunnel device (rather than tap)
+ca /etc/ssl/certs/DigiCert_Assured_ID_Root_CA.pem   // root certificate to use
+remote-cert-tls server                              // peer certificate must be signed with (extended) key usage, in this case server
+auth-user-pass                                      // authenticate using username/password
+cipher AES-256-CBC                                  // cipher to encrypt data channel with
+verify-x509-name openvpn.science.ru.nl name         // only accept connections if the cert name equals openvpn.science.ru.nl
+auth SHA256                                         // authentication algorithm to use wit HMAC
+comp-lzo                                            // use LZO compression
+verb 3                                              // output verbosity
+remote openvpn.science.ru.nl 443                    // remote host / openvpn server

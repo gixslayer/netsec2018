@@ -1,0 +1,3 @@
+$ aircrack-ng -w GDict_v2.txt -e netsec-wpa handshake.cap
+
+key: <OC@(OL4

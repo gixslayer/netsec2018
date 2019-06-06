@@ -1,0 +1,3 @@
+The DNS request is tracked by the firewall, and then incoming DNS reply is matched against active/open requests. The DNS reply is only allowed if it belongs to an active request, otherwise it is rejected.
+
+While UDP is connectionless, many protocols running over UDP have some sort of state or request/reply structure that can be used to track connection state.

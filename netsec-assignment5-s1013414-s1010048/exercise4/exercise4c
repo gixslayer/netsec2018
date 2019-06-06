@@ -1,0 +1,3 @@
+$ sudo arpspoof -t 192.168.84.64 -r 192.168.84.4
+
+http://www.cs.ru.nl/~dsprenkels/assignment5-start.html
