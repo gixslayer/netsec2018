@@ -1,0 +1,1 @@
+An active MITM attacker will not have to race the DNS request, but just drop it and send its own reply when ready.

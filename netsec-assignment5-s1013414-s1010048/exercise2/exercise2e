@@ -1,0 +1,5 @@
+The method described in exercise2a would better our changes by increasing the amount of pictures included.
+But this time all pictures have the same subdomain.
+Because of the birthday-attack the change increases that one of the replies is good.
+The maximum amount of request which can be done is 200 (this is the default size of the query queue)
+So the changes of an attack working can be increased by a factor 200.

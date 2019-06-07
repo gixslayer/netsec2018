@@ -1,0 +1,9 @@
+This is Kaminsky’s attack (2008)
+
+You need to lure the victim to your own website.
+On this website, include pictures from the target website.
+Use many subdomains in order to get many requests (like in the slides).
+The victim will request all these subdomains.
+Race for each query...
+
+It passes the bailiwick check because a DNS reply is authorized to answer for the target website, because the target website was also requested.

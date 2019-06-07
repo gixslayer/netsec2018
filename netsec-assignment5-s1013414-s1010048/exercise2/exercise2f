@@ -1,0 +1,2 @@
+When an attacker is a passive MITM he cannot influence the request send.
+But if he is fast enough with analyzing the request he can increase his changes by reading the QID, port and capitalization of the request.
